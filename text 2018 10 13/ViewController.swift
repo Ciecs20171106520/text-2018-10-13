@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var clmz: UITextField!
+    @IBOutlet weak var clmy: UITextField!
+    @IBAction func jisuian(_ sender: Any) {
+        clmz.text =
+            "\(Int(clmx.text! )! + Int(clmy.text! )!)"
+    }
+    @IBOutlet weak var clmx: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
